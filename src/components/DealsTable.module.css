@@ -1,0 +1,40 @@
+.dealsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dealRow {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dealRow:hover {
+    background-color: #f0f0f0;
+}
+
+.expandedRow {
+    background-color: #f9f9f9;
+}
+
+.status {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.grey {
+    background-color: grey;
+}

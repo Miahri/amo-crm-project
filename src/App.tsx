@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {DealsTable} from "./components/DealsTable";
 
 function App() {
+  /*const dispatch: AppDispatch = useDispatch();
+  const { accessToken, loading, error } = useSelector((state: RootState) => state.auth);
+
+  useEffect(() => {
+    dispatch(fetchAccessToken());
+  }, [dispatch]);
+
+  if (loading) {
+    return <p>Loading authentication...</p>;
+  }
+
+  if (error) {
+    return <p>Error: {error}</p>;
+  }
+
+  if (!accessToken) {
+    return <p>No access token available. Please authorize.</p>;
+  }*/
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Deals Dashboard</h1>
+      <DealsTable />
     </div>
   );
 }
